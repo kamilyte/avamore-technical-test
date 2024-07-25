@@ -1,4 +1,3 @@
-
 .container {
     width: 100vw;
     height: 100vh;
@@ -10,7 +9,6 @@
 .input-container {
     margin: 20px 0;
 }
-
 
 .input-container input {
     width: 200px;
@@ -46,11 +44,11 @@
   }
 
 
-  .input-container input[type="number"]::-webkit-inner-spin-button,
-  .input-container  input[type="number"]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-  }
+.input-container input[type="number"]::-webkit-inner-spin-button,
+.input-container  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 .button-style {
     width: 120px;
@@ -69,7 +67,6 @@
     padding-top: 20px;
     background-color: transparent;
     width: 350px;
-
 }
 
 .answer-text {

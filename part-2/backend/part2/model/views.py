@@ -1,12 +1,9 @@
-from django.shortcuts import render
-from django.http import HttpResponse
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from datetime import datetime, timedelta
 from rest_framework.parsers import JSONParser
-import logging
 from .redemptionModel import redemption_model as model
 
+# post request to put header data into the redemption model and returns the value of the total interest due
 @api_view(['POST'])
 def redemption_model(request):
     input_data = JSONParser().parse(request)

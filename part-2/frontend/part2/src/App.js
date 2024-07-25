@@ -1,4 +1,3 @@
-
 import React from 'react';
 import RedemptionInterface from './redemptionInterface';
 import './styles.css'
