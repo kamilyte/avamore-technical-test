@@ -100,24 +100,3 @@ def redemption_model(facility_a, monthly_rate, beginning_default_period, end_def
     total_interest_due = interest_due(date_of_loan, redemption_date, facility_a, facility_b, facility_c, arrangement_fee, monthly_rate, interest_rate, beginning_default_period, end_default_period, drawdowns, capital_repayments)
     
     return total_interest_due
-
-
-def main():
-    # set flexible inputs
-    facility_a = 100000
-    monthly_rate = 0.8
-    beginning_default_period = "24-Mar-24"
-    end_default_period = "23-Apr-24"
-    
-    # run the redemption model
-    total_interest_due = redemption_model(facility_a, monthly_rate, beginning_default_period, end_default_period)
-    
-    # print value of total interest due
-    print("Total interest due: ", total_interest_due)
-    
-    return
-
-
-if __name__ == "__main__":
-    main()
-    
